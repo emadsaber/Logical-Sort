@@ -6,8 +6,11 @@ using System.Threading.Tasks;
 
 namespace Logical_Sort
 {
-    public class LogicalSorter
+    public static class LogicalSorter
     {
-
+        public static void Sort(this string[] strings)
+        {
+            Array.Sort(strings, new LogicalComparer());
+        }
     }
 }
