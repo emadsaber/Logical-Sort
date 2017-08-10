@@ -5,7 +5,7 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Logical_Sort
+namespace LogicalSort.Core
 {
     public class LogicalComparer : IComparer<string>
     {

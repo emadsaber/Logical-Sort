@@ -4,13 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Logical_Sort
+namespace LogicalSort.Core
 {
     public static class LogicalSorter
     {
-        public static void Sort(this string[] strings)
+        public static string[] Sort(this string[] strings)
         {
             Array.Sort(strings, new LogicalComparer());
+            return strings;
         }
     }
 }
