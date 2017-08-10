@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,6 +13,11 @@ namespace LogicalSort.Core
         {
             Array.Sort(strings, new LogicalComparer());
             return strings;
+        }
+        public static FileInfo[] Sort(this FileInfo[] files)
+        {
+            Array.Sort<FileInfo>(files, new LogicalComparer());
+            return files;
         }
     }
 }
